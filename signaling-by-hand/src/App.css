@@ -1,0 +1,18 @@
+.App {
+}
+
+.App__textarea {
+  width: 250px;
+  height: 200px;
+}
+
+.App__videoarea {
+  padding: 10px;
+  float: left;
+}
+
+.App__loading {
+  width: 250px;
+  height: 187px;
+  border: 1px solid #000;
+}

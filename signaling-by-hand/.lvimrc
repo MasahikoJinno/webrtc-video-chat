@@ -1,0 +1,15 @@
+if g:localvimrc_sourced_once
+  finish
+endif
+
+let g:neoformat_typescript_prettier = {
+  \ 'exe': 'prettier',
+  \ 'args': ['--stdin', '--single-quote'],
+  \ 'stdin': 1,
+  \ }
+let g:neoformat_enabled_typescript = ['prettier']
+
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * Neoformat
+augroup END
