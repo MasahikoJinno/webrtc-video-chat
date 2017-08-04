@@ -160,6 +160,7 @@ class App extends React.Component<{}, State> {
       .catch(error => console.log('failed to set answer', error));
   }
 
+  // 接続先からMediaStreamを受信
   receiveMediaStream(mediaStream: MediaStream) {
     this.setState({
       remoteMediaStream: mediaStream,
