@@ -1,0 +1,10 @@
+// firebaseのコンソールから取得してください
+// https://console.firebase.google.com/?hl=ja
+export default {
+  apiKey: '',
+  authDomain: 'EDITME.firebaseapp.com',
+  databaseURL: 'https://EDITME.firebaseio.com',
+  projectId: '',
+  storageBucket: 'EDITME.appspot.com',
+  messagingSenderId: 'XXXXX'
+};

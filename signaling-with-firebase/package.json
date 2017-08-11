@@ -1,0 +1,35 @@
+{
+  "name": "3-prettier",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^20.0.6",
+    "@types/node": "^8.0.19",
+    "@types/react": "^16.0.0",
+    "@types/react-dom": "^15.5.2",
+    "firebase": "^4.2.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts-ts": "2.5.0"
+  },
+  "devDependencies": {
+    "lint-staged": "^4.0.2",
+    "prettier": "^1.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "prettier-ts": "prettier --parser typescript --single-quote",
+    "format": "npm run prettier-ts -- --write \"src/**/*.ts\" \"src/**/*.ts\"",
+    "lint-staged": "lint-staged"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run prettier-ts -- --write",
+      "git add"
+    ]
+  }
+}

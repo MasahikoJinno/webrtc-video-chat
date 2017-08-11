@@ -1,0 +1,17 @@
+{
+  "users": {
+    "aaaaaaaaaaaa": {
+      "id": "...",
+      "name": "...",
+      "email": "..."
+    }
+    "bbbbbbbbbbbb": { ... },
+    "cccccccccccc": { ... }
+  },
+  "rooms": {
+    "a": {
+      "users": {},
+      "messages": {}
+    }
+  }
+}
